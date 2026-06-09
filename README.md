@@ -1,50 +1,109 @@
-# StreamrTV visibility prototype
+# StreamrTV Visibility Prototype
 
-This is a lightweight prototype for a search-first and AI-readable StreamrTV product site.
+This is an unofficial community-built visibility prototype for StreamrTV.
 
-It is not a redesign, campaign, or product-direction proposal. It is a structure showing how Streamr/StreamrTV could be easier for new users to find and understand using only official Streamr source material.
+It is not a redesign proposal, not an official Streamr project, and not a product-direction proposal. It is a practical starter site and page structure showing how StreamrTV can be easier for new users, creators, communities, and search/AI systems to find and understand.
 
-## Goal
+The prototype uses official Streamr source material as the basis for product, protocol, naming, and network claims. It does not include the private source audit or source-tracking files.
 
-Help people discover StreamrTV/Streamr through product-intent searches, not only through existing Streamr community channels.
+## Disclaimer
 
-## Working constraints
+This is an unofficial community contribution.
 
-- Use official Streamr sources only.
-- Do not invent product capabilities.
-- Label roadmap/future features clearly.
-- Keep Streamr Network and StreamrTV/Streamr product messaging separated.
-- Optimize for both normal SEO and AI search extraction.
+It is not an official Streamr project, not a request for Streamr to change its roadmap, and not a claim to represent the Streamr team.
 
-## Current hypothesis
+The purpose of this repo is to explore a practical starter page structure that could make StreamrTV easier for new users, creators, communities, and search/AI systems to find and understand.
 
-Streamr Network has infrastructure visibility. StreamrTV/Streamr needs a clearer product discovery surface for creators, communities, secure video users, and people who do not already know Streamr.
+All product, protocol, naming, and network claims should be based on official Streamr source material. This repo should not use influencer commentary, Discord speculation, Reddit posts, market commentary, or third-party claims as source material.
 
-## Prototype routes
+Any audience paths in this prototype, such as creators, communities, or secure meeting users, should be treated as exploratory visibility paths unless directly supported by official Streamr material.
 
-- `/` — product discovery homepage
-- `/what-is-streamr` — canonical product explainer
-- `/how-it-works` — simple technical explanation
-- `/for-creators` — creator and broadcaster use cases
-- `/for-communities` — AMAs, events, community calls
-- `/for-secure-meetings` — secure/private video direction
-- `/powered-by-streamr-network` — bridge back to protocol/network
-- `/faq` — AI-readable FAQ
+## Core idea
 
-## Official sources tracked
+Streamr Network and StreamrTV should be treated as different web surfaces.
 
-See `content/source-map.md`.
+- **Streamr Network** explains the protocol, infrastructure, network roles, token mechanics, developers, node operators, sponsors, and decentralized data infrastructure.
+- **StreamrTV** needs a clearer product-facing discovery layer for people who may not already understand Streamr, DATA, nodes, or decentralized data infrastructure.
 
-## Local setup
+The discovery problem is simple: people should be able to understand what StreamrTV is, who it may be useful for, how it connects to Streamr Network, and what can be used today without first needing deep background knowledge of the wider Streamr ecosystem.
+
+## What this repo contains
+
+```txt
+content/
+  streamrtv-visibility-brief.md
+  page-plan.md
+  github-note-to-team.md
+
+src/app/
+  page.tsx
+  what-is-streamr/page.tsx
+  how-it-works/page.tsx
+  for-creators/page.tsx
+  for-communities/page.tsx
+  for-secure-meetings/page.tsx
+  powered-by-streamr-network/page.tsx
+  faq/page.tsx
+```
+
+The `content/` folder explains the visibility logic, page plan, and review framing.
+
+The `src/app/` folder contains a small Next.js starter site structure showing how public-facing pages could be organized.
+
+## Review path
+
+For a quick review, start here:
+
+1. `content/streamrtv-visibility-brief.md`
+2. `content/page-plan.md`
+3. `src/app/page.tsx`
+4. `src/app/faq/page.tsx`
+5. `content/github-note-to-team.md`
+
+## What this is not
+
+This is not an official Streamr repo.
+
+This is not a product roadmap proposal.
+
+This is not a generic SEO audit.
+
+This is not based on influencer commentary, Reddit, Discord speculation, market claims, or third-party interpretations.
+
+This repo does not include private source notes or private source-tracking files.
+
+## What this is
+
+This is a community contribution focused on practical visibility:
+
+- clearer public-facing pages
+- beginner-friendly explanations
+- better separation between Streamr Network and StreamrTV
+- more crawlable product context
+- AI-readable FAQ structure
+- source-grounded positioning
+- clearer paths for creators, communities, and secure communication users where supported by official Streamr material
+
+## Local development
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
 ```
 
-## Suggested contribution workflow
+Then open:
 
-1. Build this separately as a prototype.
-2. Share with Streamr team for review.
-3. Ask whether there is a preferred repo/process.
-4. Convert approved sections into issues, PRs, or production pages.
+```txt
+http://localhost:3000
+```
+
+## Status
+
+Early community prototype. Intended as a practical starting point for visibility structure, not a finished site.

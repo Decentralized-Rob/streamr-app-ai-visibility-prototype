@@ -1,5 +1,30 @@
-node_modules
-.next
-out
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# local env files
+.env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# private source / review files
+source-map.md
+private-source-of-truth.md
+private-source-notes.md
+review-checklist.md
+
+# misc
 .DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
