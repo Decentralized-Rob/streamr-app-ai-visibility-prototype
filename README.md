@@ -1,33 +1,59 @@
-# StreamrTV Visibility Prototype
+# Streamr App AI Visibility Prototype
 
-This is an unofficial community-built visibility prototype for StreamrTV.
+A community-built AISEO and automation prototype for improving how Streamr App can be discovered, understood, and explained across search engines, AI answer systems, and new-user entry points.
 
-It is not a redesign proposal, not an official Streamr project, and not a product-direction proposal. It is a practical starter site and page structure showing how StreamrTV can be easier for new users, creators, communities, and search/AI systems to find and understand.
+The current Streamr product surface is security-first, serverless video communication built on Streamr Network. This repo explores the missing middle layer around that product: crawlable explanations, structured FAQs, clear user-intent pages, and reusable content patterns that help humans and AI systems understand the product without first needing to understand the whole protocol stack.
 
-The prototype uses official Streamr source material as the basis for product, protocol, naming, and network claims. It does not include the private source audit or source-tracking files.
+## Project context
 
-## Disclaimer
+Streamr has deep protocol and infrastructure material. Streamr App has a different visibility challenge: a new visitor should be able to understand the product surface before learning DATA, Operators, Sponsorships, token mechanics, or decentralized real-time data infrastructure.
 
-This is an unofficial community contribution.
+This prototype treats public product content as structured product knowledge. The same content has to serve several readers at once:
 
-It is not an official Streamr project, not a request for Streamr to change its roadmap, and not a claim to represent the Streamr team.
+- new users looking for a simple explanation
+- privacy-conscious teams evaluating secure communication tools
+- communities and event hosts exploring live or multi-speaker formats
+- search engines crawling the product surface
+- AI systems extracting short answers
+- future automation workflows that need consistent, source-grounded content blocks
 
-The purpose of this repo is to explore a practical starter page structure that could make StreamrTV easier for new users, creators, communities, and search/AI systems to find and understand.
+## AISEO and automation angle
 
-All product, protocol, naming, and network claims should be based on official Streamr source material. This repo should not use influencer commentary, Discord speculation, Reddit posts, market commentary, or third-party claims as source material.
+This is not a brochure-site exercise. The visible pages are only the first layer.
 
-Any audience paths in this prototype, such as creators, communities, or secure meeting users, should be treated as exploratory visibility paths unless directly supported by official Streamr material.
+The deeper work is organizing Streamr App knowledge so it can be parsed, reused, checked, expanded, and surfaced more reliably. A practical AISEO layer should improve:
 
-## Core idea
+- entity clarity
+- user-intent page structure
+- extractable FAQ answers
+- product/protocol separation
+- beginner-safe explanations
+- source-grounded claim discipline
+- reusable content blocks
+- future metadata and sitemap logic
+- future internal-linking suggestions
+- repeatable content review workflows
 
-Streamr Network and StreamrTV should be treated as different web surfaces.
+## Scope
 
-- **Streamr Network** explains the protocol, infrastructure, network roles, token mechanics, developers, node operators, sponsors, and decentralized data infrastructure.
-- **StreamrTV** needs a clearer product-facing discovery layer for people who may not already understand Streamr, DATA, nodes, or decentralized data infrastructure.
+This prototype is built around four practical goals:
 
-The discovery problem is simple: people should be able to understand what StreamrTV is, who it may be useful for, how it connects to Streamr Network, and what can be used today without first needing deep background knowledge of the wider Streamr ecosystem.
+1. Make Streamr App easier to understand from a first visit.
+2. Keep product-facing explanations separate from protocol-facing explanations.
+3. Create page structures that search engines and AI answer systems can parse cleanly.
+4. Establish reusable content patterns that can support future automation.
 
-## What this repo contains
+The repo keeps the current file and route names for continuity, but the visible framing now uses Streamr App as the primary product name. References to StreamrTV should be treated as historical or transitional context unless the team prefers otherwise.
+
+## Source rule
+
+Product, protocol, naming, and network claims should be grounded in official Streamr material.
+
+Audience paths such as secure meeting users, communities, creators, and multi-speaker broadcasts are treated as visibility paths for this prototype. They should stay aligned with what official Streamr material supports.
+
+Private source notes and source-tracking files are kept outside this public repo.
+
+## Repo structure
 
 ```txt
 content/
@@ -46,9 +72,9 @@ src/app/
   faq/page.tsx
 ```
 
-The `content/` folder explains the visibility logic, page plan, and review framing.
+The `content/` folder explains the visibility logic, AISEO framing, and page plan.
 
-The `src/app/` folder contains a small Next.js starter site structure showing how public-facing pages could be organized.
+The `src/app/` folder contains a small Next.js prototype showing how public-facing content could be structured.
 
 ## Review path
 
@@ -59,30 +85,6 @@ For a quick review, start here:
 3. `src/app/page.tsx`
 4. `src/app/faq/page.tsx`
 5. `content/github-note-to-team.md`
-
-## What this is not
-
-This is not an official Streamr repo.
-
-This is not a product roadmap proposal.
-
-This is not a generic SEO audit.
-
-This is not based on influencer commentary, Reddit, Discord speculation, market claims, or third-party interpretations.
-
-This repo does not include private source notes or private source-tracking files.
-
-## What this is
-
-This is a community contribution focused on practical visibility:
-
-- clearer public-facing pages
-- beginner-friendly explanations
-- better separation between Streamr Network and StreamrTV
-- more crawlable product context
-- AI-readable FAQ structure
-- source-grounded positioning
-- clearer paths for creators, communities, and secure communication users where supported by official Streamr material
 
 ## Local development
 
@@ -106,4 +108,4 @@ http://localhost:3000
 
 ## Status
 
-Early community prototype. Intended as a practical starting point for visibility structure, not a finished site.
+Early community prototype. The current focus is AI visibility structure, automation-ready content patterns, clarity, and discoverability.
